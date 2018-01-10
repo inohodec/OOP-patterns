@@ -2,5 +2,5 @@
 
 class Duck
 {
-
+    private $color;
 }
