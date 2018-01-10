@@ -1,5 +1,5 @@
 <?php
-
+//абстрактный класс для уток
 abstract class Duck {
     function swim() {
         echo "I can swim";
