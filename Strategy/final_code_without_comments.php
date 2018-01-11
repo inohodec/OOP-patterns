@@ -150,3 +150,26 @@ $ship3->display();
 
 $ship3->setShooting(new Devastator());
 $ship3->display();
+
+
+/****** RESULT
+I'm very big and powerful SpaseShip with name Dreadnought
+I can blink as all Spaceships
+I always use SubSpaceEngine for flying
+I always use Devastator for destroying planets
+ *
+I'm small, inconspicuous and rapid SpaceShip with name Scout
+I can blink as all Spaceships
+I always use RapidEngine for extra fast flying
+I always use Laser for destroying other ships
+ *
+I'm a small ToyShip
+I can blink as all Spaceships
+I always use ToyEngine for flying
+I can't shoot, because I'm just a toy
+ *
+I'm a small ToyShip
+I can blink as all Spaceships
+I always use ToyEngine for flying
+I always use Devastator for destroying planets
+ ********/
