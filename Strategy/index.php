@@ -55,3 +55,5 @@ $ship3 = new ToyShip();
 $ship1->display();
 $ship2->display();
 $ship3->display();
+
+echo "<a href='../index.php'>Back to patterns list</a>";
