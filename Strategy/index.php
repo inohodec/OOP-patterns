@@ -1,29 +1,42 @@
 <?php
-//абстрактный класс для уток
-abstract class Duck {
+
+abstract class SpaceShip {
+    function fly() {
+        echo "I can fly as all Spaceships<br>";
+    }
+
     function swim() {
-        echo "I can swim";
+        echo "Of course every SpaceShip can swim";
     }
-    function quack() {
-        echo "I can quack";
+
+    function shoot() {
+        echo "I can shoot as all military Spaceship<br>";
     }
-    abstract function fly();
+
+    abstract function display();
 }
 
-class RedDuck extends Duck {
-    public function fly() {
-        echo "I use my wings for flying";
-    }
-}
-
-class GreyDuck extends Duck {
-    public function fly() {
-        echo "I use my wings for flying";
+class Dreadnought extends SpaceShip {
+    function display()
+    {
+        echo "I'm very big and powerfull SpaseShip with name ".__CLASS__."<br>";
     }
 }
 
-class WoodenDuck extends Duck {
-    public function fly() {
-        echo "I can't fly";
+class Scout extends SpaceShip {
+    function display()
+    {
+        echo "I'm small, inconspicuous and rapid SpaceShip with name ".__CLASS__."<br>";
+    }
+}
+
+class ToyShip extends SpaceShip {
+    function shoot()
+    {
+        echo "Unfortunately I can't shoot I'm only a toy (((";
+    }
+    function display()
+    {
+        echo "I'm a toy SpaceShip";
     }
 }
