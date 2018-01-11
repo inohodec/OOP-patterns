@@ -1,4 +1,5 @@
 <?php
+echo "<a href='../index.php'>Back to patterns list</a>";
 
 abstract class SpaceShip {
     function fly() {
@@ -6,7 +7,7 @@ abstract class SpaceShip {
     }
 
     function swim() {
-        echo "Of course every SpaceShip can swim";
+        echo "Of course every SpaceShip can swim<br>";
     }
 
     function shoot() {
@@ -40,11 +41,11 @@ class Scout extends SpaceShip {
 class ToyShip extends SpaceShip {
     function shoot()
     {
-        echo "Unfortunately I can't shoot I'm only a toy (((";
+        echo "Unfortunately I can't shoot I'm only a toy (((<br>";
     }
     function description()
     {
-        echo "I'm a toy SpaceShip";
+        echo "I'm a ".__CLASS__;
     }
 }
 
@@ -56,4 +57,3 @@ $ship1->display();
 $ship2->display();
 $ship3->display();
 
-echo "<a href='../index.php'>Back to patterns list</a>";
