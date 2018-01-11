@@ -14,6 +14,8 @@
         .list a {
             display: inline-block;
             border-bottom: 1px dashed grey;
+            margin: 10px;
+
         }
     </style>
 </head>
