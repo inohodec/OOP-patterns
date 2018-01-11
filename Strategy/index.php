@@ -19,7 +19,7 @@ abstract class SpaceShip {
 class Dreadnought extends SpaceShip {
     function display()
     {
-        echo "I'm very big and powerfull SpaseShip with name ".__CLASS__."<br>";
+        echo "I'm very big and powerful SpaseShip with name ".__CLASS__."<br>";
     }
 }
 
