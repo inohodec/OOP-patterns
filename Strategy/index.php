@@ -22,7 +22,7 @@ echo "<a href='../index.php'>Back to patterns list</a><hr>";
 /* --------------- Клиентский код ----------------*/
 
 require_once "spaceShips.php"; # Здесь находится код для кораблей
-require_once "features.php"; # Здесь находится код для полетов и пушек
+require_once "features.php"; # Здесь находится код для полетов и пушек (т.е. алгоритмы кот мы инкапсулируем)
 
 
 $ship1 = new Dreadnought();
