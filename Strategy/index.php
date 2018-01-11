@@ -29,5 +29,7 @@ $ship1->display();
 $ship2->display();
 $ship3->display();
 
-$ship3->setShooting(new Devastator()); //меняем пушку у игрушки на "Девастатор"
+/******** А теперь меняем пушку у игрушки на "Девастатор" **************/
+
+$ship3->setShooting(new Devastator());
 $ship3->display();
