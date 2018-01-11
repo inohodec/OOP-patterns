@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>PHP OOP-patterns</title>
 </head>
 <body>
     <a href="Strategy/index.php">Strategy Pattern</a>
