@@ -7,21 +7,16 @@ abstract class SpaceShip {
     public $flying;  // Объект принадлежащий типу Flying
     public $shooting;  // Объект принадлежащий типу Shooting
 
-    public function __construct()
-    {
-        $this->setFeatures();
-    }
+    abstract function __construct();
 
-    abstract function setFeatures();
+    //У каждого корабля ВСЕГДА есть название модели и оно ВСЕГДА разное
+    abstract function description();
 
     //ВСЕ корабли умеют мигать огоньками, диодами или фонарями, даже игрушечные
     function blink()
     {
         echo "I can blink as all Spaceships<br>";
     }
-
-    //У каждого корабля ВСЕГДА есть название модели и оно ВСЕГДА разное
-    abstract function description();
 
     //запускаем полет
     public function startFlying()
@@ -64,7 +59,7 @@ abstract class SpaceShip {
 //корабль Дредноут
 class Dreadnought extends SpaceShip {
 
-    function setFeatures()
+    function __construct()
     {
         $this->flying = new SubSpaceEngine();
         $this->shooting = new Devastator();
@@ -79,7 +74,7 @@ class Dreadnought extends SpaceShip {
 //корабль Разведчик
 class Scout extends SpaceShip {
 
-    function setFeatures()
+    function __construct()
     {
         $this->flying = new RapidEngine();
         $this->shooting = new Laser();
@@ -94,7 +89,7 @@ class Scout extends SpaceShip {
 //корабль Игрушечный
 class ToyShip extends SpaceShip {
 
-    function setFeatures()
+    function __construct()
     {
         $this->flying = new ToyEngine();
         $this->shooting = new Toy();
