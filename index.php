@@ -22,6 +22,7 @@
 <body>
 <div class="list">
     <a href="Strategy/index.php">Strategy Pattern</a>
+    <a href="Observer/index.php">Observer Pattern</a>
 </div>
 
 </body>
