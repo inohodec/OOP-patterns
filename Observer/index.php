@@ -19,10 +19,7 @@ $pc = new Desktop($weatherStationFromDnepr);
 $tablet = new Tablet($weatherStationFromDnepr);
 
 $weatherStationFromDnepr->setValues();
-
 $weatherStationFromDnepr->deleteObserver($phone);
-
-<<<<<<< HEAD
 $weatherStationFromDnepr->setValues();
 
 /*
@@ -35,6 +32,4 @@ $weatherStationFromDnepr->setValues();
 
 //Desktop0, -19, -14, -11
 //Tablet0, -19, -14, -11
-=======
-$weatherStationFromDnepr->setValues();
->>>>>>> 50ffe82ee7ea5537527b945603c144b4bbd839f8
+
