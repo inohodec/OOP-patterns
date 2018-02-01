@@ -4,9 +4,6 @@
  * одного объекта происходит автоматическое оповещение и обновление всех зависимых объектов
  */
 
-/*
- *
- */
 
 require_once 'Observer.php';
 require_once 'Subject.php';
@@ -22,9 +19,9 @@ $weatherStationFromDnepr->setValues();
 $weatherStationFromDnepr->deleteObserver($phone);
 $weatherStationFromDnepr->setValues();
 
-/*
- * OUTPUT
- */
+
+// ---------------- OUTPUT ------------------------
+
 
 //Phone-19, -2, -12, -11
 //Desktop-19, -2, -12, -11
