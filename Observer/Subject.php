@@ -36,7 +36,7 @@ class WeatherData implements Subject {
     public function deleteObserver(Observer $observer)
     {
         $observerKey = array_search($observer, $this->observersList);
-        if ($observerKey) {
+        if ($observerKey !== false) {
             unset($this->observersList[$observerKey]);
         }
     }
@@ -61,3 +61,4 @@ class WeatherData implements Subject {
         $this->notifyObserver();
     }
 }
+

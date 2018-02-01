@@ -19,3 +19,18 @@ $pc = new Desktop($weatherStationFromDnepr);
 $tablet = new Tablet($weatherStationFromDnepr);
 
 $weatherStationFromDnepr->setValues();
+
+$weatherStationFromDnepr->deleteObserver($phone);
+
+$weatherStationFromDnepr->setValues();
+
+/*
+ * OUTPUT
+ */
+
+//Phone-19, -2, -12, -11
+//Desktop-19, -2, -12, -11
+//Tablet-19, -2, -12, -11
+
+//Desktop0, -19, -14, -11
+//Tablet0, -19, -14, -11
