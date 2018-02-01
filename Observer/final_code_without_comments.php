@@ -120,3 +120,7 @@ $pc = new Desktop($weatherStationFromDnepr);
 $tablet = new Tablet($weatherStationFromDnepr);
 
 $weatherStationFromDnepr->setValues();
+
+$weatherStationFromDnepr->deleteObserver($phone);
+
+$weatherStationFromDnepr->setValues();
