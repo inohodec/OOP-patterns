@@ -9,6 +9,9 @@ require_once 'Observer.php';
 require_once 'Subject.php';
 
 
+echo "<a href='../index.php'>Back to patterns list</a><hr>";
+echo "<p style='text-align: center; margin: 15px;'><img src='Observer'></p>";
+
 $weatherStationFromDnepr = new WeatherData();
 
 $phone = new Phone($weatherStationFromDnepr);
