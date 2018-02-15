@@ -5,7 +5,7 @@
     <title>PHP OOP-patterns</title>
     <style>
         .list {
-            max-width: 400px;
+            margin: 20px;
             border: 3px solid grey;
             padding: 20px;
             background-color: beige;
@@ -23,6 +23,8 @@
 <div class="list">
     <a href="Strategy/index.php">Strategy Pattern</a>
     <a href="Observer/index.php">Observer Pattern</a>
+    <a href="Decorator/index.php">Decorator Pattern</a>
+    <a href="Command/index.php">Command Pattern</a>
 </div>
 
 </body>
