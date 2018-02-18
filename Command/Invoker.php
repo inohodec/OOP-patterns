@@ -47,5 +47,4 @@ class RemoteControl {
     public function undoAction() {
         $this->lastAction->undo();
     }
-
 }
