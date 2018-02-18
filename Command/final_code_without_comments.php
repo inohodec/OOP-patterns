@@ -55,7 +55,6 @@ class RemoteControl {
 }
 
 //commands
-
 abstract class Commands
 {
     abstract function execute();                //делегирует определенные действия получателю
@@ -143,6 +142,7 @@ class DefaultEmpty extends Commands {
         echo "Just do nothing!<br>";
     }
 }
+
 //client's code
 $remoteControl = new RemoteControl();
 
