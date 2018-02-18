@@ -33,7 +33,7 @@ class RemoteControl {
         $this->lastAction = new DefaultEmpty();
     }
 
-    public function setSlot(int $slotNumber, Commands $commandOn, Commands $commandOff)
+   public function setSlot(int $slotNumber, Commands $commandOn, Commands $commandOff)
     {
         $this->deviceOn[$slotNumber] = $commandOn;
         $this->deviceOff[$slotNumber] = $commandOff;
@@ -57,8 +57,8 @@ class RemoteControl {
 //commands
 abstract class Commands
 {
-    abstract function execute();                //делегирует определенные действия получателю
-    abstract function undo();                   //делегирует действия получателю, обратные действиям execute()
+    abstract function execute();
+    abstract function undo();
 }
 
 class OvenOn extends Commands {
