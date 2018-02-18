@@ -7,8 +7,6 @@
 
 abstract class Commands
 {
-
-
     abstract function execute();                //делегирует определенные действия получателю
     abstract function undo();                   //делегирует действия получателю, обратные действиям execute()
 }
